@@ -8,11 +8,13 @@
         <version>3.2.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.colak</groupId>
     <artifactId>spring-camel-tutorial</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-camel-tutorial</name>
     <description>Demo project for Spring Boot</description>
+
     <properties>
         <java.version>22</java.version>
         <camel.version>4.5.0</camel.version>
@@ -67,6 +69,10 @@
             <artifactId>camel-spring-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-kafka-starter</artifactId>
+        </dependency>
         <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

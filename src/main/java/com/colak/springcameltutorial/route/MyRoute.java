@@ -8,6 +8,9 @@ public class MyRoute extends RouteBuilder {
 
     @Override
     public void configure() {
-        from("timer:foo").to("log:bar");
+        from("timer://foo?period=1000")
+                .setBody().constant("Hello from Camel!") // Set the message body
+                .to("kafka:myInputTopic?brokers=localhost:9092")
+                .to("log:bar");
     }
 }
