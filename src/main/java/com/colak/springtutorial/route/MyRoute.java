@@ -1,4 +1,4 @@
-package com.colak.springcameltutorial.route;
+package com.colak.springtutorial.route;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
